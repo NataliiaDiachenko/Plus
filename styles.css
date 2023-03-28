@@ -11,22 +11,22 @@ body {
 
 .container {
   width: 100%;
- 
+
   padding-right: 15px;
   padding-left: 15px;
 }
 
 .weather-app-wrapper {
-  max-width: 380px;
-  max-height: 720px;
-  margin: 30px auto;
+  max-width: 348px;
+  max-height: 680px;
+  margin: 20px auto;
 }
 
 .weather-app {
   border: 1px solid #dee2e6;
   border-radius: 10px;
   padding: 20px;
-  height: 710px;
+  height: 680px;
   background: linear-gradient(to top, rgba(0 0 0 / 0.5), rgba(0 0 0 / 0)),
     url(./images/pexels.jpg);
   background-repeat: no-repeat;
@@ -104,8 +104,8 @@ li {
   border-radius: 6px;
   border-width: 1px;
   border-color: #dee2e6;
-  /*  
-  width: 75%; */
+   
+  width: 210px;
 }
 
 .form-control:hover,
@@ -136,9 +136,21 @@ li {
   font-size: 12px;
 }
 
+.fa-solid {
+  color: #a2a2a2b8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+   flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 5px;
+  
+}
+
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+  
 }
 
 .forecast-row {
@@ -160,9 +172,9 @@ li {
 }
 
 .weather-forecast-img {
-align-items: center;
-text-align: center;
-color: #f96c00b8;
+  align-items: center;
+  text-align: center;
+  color: #f96c00b8;
 }
 
 .weather-forecast-temperatures {
