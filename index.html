@@ -29,46 +29,57 @@
       <div class="weather-app">
 
 
-        <form class="search-form" id="search-form">
-          <div class="form-item">
-            <div class="form-input">
-              <input type="search" placeholder="Enter a city" class="form-control" id="city-input" autocomplete="off" />
+        <div class="weather-color">
+          <form class="search-form" id="search-form">
+            <div class="form-item">
+              <div class="form-input">
+                <input type="search" placeholder="Enter a city" class="form-control" id="city-input"
+                  autocomplete="off" />
+              </div>
+              <div class="form-submit">
+                <input type="submit" value="Search" class="btn btn-primary" />
+              </div>
+              <i class="fa-solid fa-bars"></i>
             </div>
-            <div class="form-submit">
-              <input type="submit" value="Search" class="btn btn-primary" />
-            </div>
-          <i class="fa-solid fa-bars"></i>
-          </div>
-        </form>
-        
+          </form>
 
 
-        <div class="overview">
-          <h1 id="city"></h1>
-          <ul>
-            <li><span id="date"></span></li>
-            <li id="description"></li>
-          </ul>
-        </div>
 
-
-        <div class="row">
-
-          <div class="col-6">
-            <div class="weather-temperature">
-              <img src="#" alt="Mostly Cloudy" id="icon" />
-              <strong id="temperature"></strong>
-              <span class="units">
-                <a href="#" id="celsius-link" class="active">°C</a> |
-                <a href="#" id="fahrenheit-link" class="active">°F</a></span>
-            </div>
-          </div>
-
-          <div class="col-6">
+          <div class="overview">
+            <h1 id="city"></h1>
             <ul>
-              <li>Humidity <span id="humidity"></span>%</li>
-              <li>Wind <span id="wind"></span>km/h</li>
+              <li><span id="date"></span></li>
+
+              <li id="description"></li>
+
             </ul>
+          </div>
+
+
+          <div class="weather-temperature-row">
+
+            <div class="weather-temperature-col">
+
+              <div class="weather-temperature">
+
+                <strong id="temperature"></strong>
+                <span class="units">
+
+                  <a href="#" id="celsius-link" class="active">°C</a> |
+                  <a href="#" id="fahrenheit-link" class="active">°F</a></span>
+
+              </div>
+
+            </div>
+
+            <div class="weather-temperature-humidity">
+              <ul>
+                <!-- <li id="description"><img src="#" alt="" id="icon" /></li> -->
+                <li>Humidity <span id=""></span>%</li>
+                <li>Humidity <span id="humidity"></span>%</li>
+                <li>Wind <span id="wind"></span>km/h</li>
+              </ul>
+            </div>
           </div>
 
           <div class="weather-forecast" id="forecast">
@@ -86,8 +97,6 @@
               
             </div> -->
           </div>
-
-
 
         </div>
       </div>
