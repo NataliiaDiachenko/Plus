@@ -220,7 +220,7 @@ li {
 #humidity,
 #feels {
   font-size: 20px;
-  /* color: #48484a; */
+  color: #48484a;
 }
 
 .wind-i,
@@ -229,7 +229,7 @@ li {
   display: flex;
   align-items: center;
   width: 100px;
-  /* color: #48484a; */
+  color: #48484a;
 }
 
 .fa-wind,
@@ -263,7 +263,15 @@ li {
 
 .km,
 .procent {
-  font-size: 20px;
+  font-size: 11px;
+  color: #48484a;
+}
+
+.celsius-feels {
+  font-size: 11px;
+  color: #48484a;
+  position: relative;
+  top: -2px;
 }
 .weather-temperature .active {
   color: #48484a;
