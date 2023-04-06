@@ -44,9 +44,8 @@ body {
   gap: 5px;
 }
 
-
 #date,
- #description{
+#description {
   color: #48484a;
 }
 .weather-phone-right {
@@ -278,7 +277,7 @@ li {
   padding-top: 25px;
   padding-bottom: 25px;
   border-radius: 12px;
-  
+
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
 
