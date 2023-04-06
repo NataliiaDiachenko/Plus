@@ -23,7 +23,7 @@ body {
 
 .weather-app {
   border-radius: 12px;
-  height: 680px;
+  height: 660px;
   border: 1px solid #c2c2c2;
   background: linear-gradient(
     179.1deg,
@@ -32,8 +32,6 @@ body {
     rgb(145, 168, 208) 96.1%
   );
   padding: 10px 15px;
-
-  
 }
 
 .weather-phone {
@@ -146,7 +144,7 @@ input {
 }
 
 .overview {
-  margin-top: 50px;
+  margin-top: 34px;
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
@@ -165,32 +163,8 @@ h1 {
 .weather-color {
   padding: 20px;
   height: 570px;
-  /* background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%); */
   background: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
-
-  /* background: linear-gradient(to top, rgba(0 0 0 / 0), rgba(0 0 0 / 0)),
-    url(./images/unsplash.jpg);
-
-  background-repeat: no-repeat;
-  background-size: 310%;
-   background-position: bottom -85px right -70px; 
-  background-position: bottom -85px right -70px;
-  border-radius: 10px;
-  background-position: right -80px top 0px; */
 }
-
-/* .weather-color {
-  padding: 20px;
-  height: 680px;
-  background: linear-gradient(to top, rgba(51, 67, 126, 0.268), rgba(0 0 0 / 0)),
-    url(./images/pexels.jpg);
-
-  background-repeat: no-repeat;
-  background-size: 150%;
-  background-position: bottom -85px right -70px;
-  border-radius: 10px;
-  background-position: right -65px top 0px;
-} */
 
 li {
   font-size: 11px;
@@ -224,10 +198,24 @@ li {
   width: 140px;
 }
 
+.temperature-icon {
+  display: flex;
+}
+
+.temperature-active {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  justify-content: flex-end;
+  align-items: baseline;
+}
+
 #wind,
 #humidity,
 #feels {
   font-size: 20px;
+  color: ;
 }
 
 .wind-i,
@@ -235,7 +223,7 @@ li {
 .feels-i {
   display: flex;
   align-items: center;
-  width: 80px;
+  width: 100px;
 }
 
 .fa-wind,
@@ -244,6 +232,7 @@ li {
   color: #eb6e4c;
   margin-right: 10px;
   padding-left: 10px;
+  width: 20px;
 }
 
 .weather-temperature-humidity {
@@ -262,10 +251,14 @@ li {
 .weather-temperature .units {
   position: relative;
   font-size: 11px;
-  top: -34px;
+  top: -36px;
   color: #48484a;
 }
 
+.km,
+.procent {
+  font-size: 20px;
+}
 .weather-temperature .active {
   color: #48484a;
   text-decoration: none;
