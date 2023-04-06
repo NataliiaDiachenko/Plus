@@ -14,8 +14,6 @@
   <script src="https://kit.fontawesome.com/321f1cb627.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
   <link rel="stylesheet" href="./styles.css" type="text/css" />
 
 
@@ -24,66 +22,107 @@
 <body>
 
   <div class="container">
-
     <div class="weather-app-wrapper">
+
       <div class="weather-app">
 
+        <div class="weather-phone">
 
-        <div class="weather-color">
-          <form class="search-form" id="search-form">
-            <div class="form-item">
-              <div class="form-input">
-                <input type="search" placeholder="Enter a city" class="form-control" id="city-input"
-                  autocomplete="off" />
-              </div>
-              <div class="form-submit">
-                <input type="submit" value="Search" class="btn btn-primary" />
-              </div>
-              <i class="fa-solid fa-bars"></i>
-            </div>
-          </form>
-
-
-
-          <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-              <li><span id="date"></span></li>
-              <li id="description"></li>
+          <div>
+            <ul class="weather-phone-left">
+              <li><i class="fa-regular fa-clock"></i></li>
+              <li><i class="fa-brands fa-whatsapp"></i></li>
             </ul>
           </div>
+          <div>
+            <ul class="weather-phone-right">
+              <li><i class="fa-solid fa-wifi"></i></li>
+              <li><i class="fa-solid fa-signal"></i></li>
+              <li><i class="fa-solid fa-battery-three-quarters"></i></li>
+            </ul>
+          </div>
+        </div>
 
-          <div class="weather-temperature-row">
-            <div class="weather-temperature-col">
-              <div class="weather-temperature">
-                <img src="#" alt="Mostly Cloudy" id="icon" />
+        <form class="search-form" id="search-form">
+          <div class="form-bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="form-input">
+            <input type="text" placeholder="Enter a city" class="form-control" id="city-input" autocomplete="off" />
+            <button type="submit" class="btn btn-primary fa fa-search"></button>
+          </div>
+        </form>
+
+        <div class="overview">
+          <h1 id="city"></h1>
+          <ul>
+            <li><span id="date"></span></li>
+            <li id="description"></li>
+          </ul>
+        </div>
+
+
+        <div class="weather-temperature-row">
+          <div class="weather-temperature-col">
+            <div class="weather-temperature">
+              <div class="temperature-icon"><img src="#" alt="Mostly Cloudy" id="icon" /></div>
+              <div class="temperature-active">
                 <strong id="temperature"></strong>
                 <span class="units">
                   <a href="#" id="celsius-link" class="active">°C</a> |
                   <a href="#" id="fahrenheit-link" class="active">°F</a></span>
               </div>
             </div>
-            <div class="weather-temperature-humidity">
-              <ul class="weather-temperature-items">
-                <li class="weather-temperature-item">Humidity <span id=""></span>%</li>
-                <li class="weather-temperature-item">Humidity <span id="humidity"></span>%</li>
-                <li class="weather-temperature-item">Wind <span id="wind"></span>km/h</li>
-              </ul>
-            </div>
-            
           </div>
-<div class="weather-forecast" id="forecast"></div>
+
+          <div class="weather-temperature-humidity">
+            <div class="weather-temperature-items">
+              <div class="feels-i">
+                <i class="fa-solid fa-temperature-low"></i>
+                <div class="weather-temperature-item1"></i>Feels like<br>
+                  <span id="feels"> </span> <sup class="procent">°C</sup>
+                </div>
+              </div>
+              <div class="humidity-i">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="weather-temperature-item2"></i>Humidity <br>
+                  <span id="humidity"> </span> <span class="procent">%</span>
+                </div>
+              </div>
+              <div class="wind-i">
+                <i class="fa-solid fa-wind"></i>
+                <div class="weather-temperature-item3">Wind <br>
+                  <span id="wind"> </span> <span class="km">km/h</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="weather-forecast" id="forecast"></div>
+
+        <div class="weather-phone-touch">
+          <div>
+            <ul class="weather-phone-down">
+              <li><i class="fa-solid fa-house"></i></li>
+              <li><i class="fa-solid fa-magnifying-glass"></i></li>
+              <li><i class="fa-solid fa-gear"></i></li>
+              <li><i class="fa-solid fa-user"></i></li>
+            </ul>
+          </div>
+        </div>
+
       </div>
 
-
-      <small>
-        <a href="https://jocular-peony-3e33d0.netlify.app/" target="_blank">Open-source code</a>
-        by Nataliia Diachenko
+      <small class="small">
+        This project was coded by 👨‍🏫 <a href="https://www.instagram.com/nataliia.diachenko_/"
+          target="_blank">Nataliia
+          Diachenko</a> <br> Open-sourced on
+        <a href="https://github.com/NataliiaDiachenko/Plus" target="_blank">GitHub</a> and hosted on <a
+          href="https://jocular-peony-3e33d0.netlify.app/" target="_blank">Netlify</a>
       </small>
-
     </div>
   </div>
+
   <script src="./src/index.js"></script>
 </body>
 
