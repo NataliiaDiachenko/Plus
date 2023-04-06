@@ -44,6 +44,11 @@ body {
   gap: 5px;
 }
 
+
+#date,
+ #description{
+  color: #48484a;
+}
 .weather-phone-right {
   display: flex;
   gap: 5px;
@@ -158,6 +163,7 @@ h1 {
   font-size: 36px;
   font-weight: 500;
   margin-bottom: 5px;
+  /* color: #48484a; */
 }
 
 .weather-color {
@@ -192,7 +198,7 @@ li {
 
 .weather-temperature-items {
   display: flex;
-  gap: 18px;
+  gap: 12px;
   font-size: 11px;
   flex-direction: column;
   width: 140px;
@@ -215,7 +221,7 @@ li {
 #humidity,
 #feels {
   font-size: 20px;
-  color: ;
+  /* color: #48484a; */
 }
 
 .wind-i,
@@ -224,6 +230,7 @@ li {
   display: flex;
   align-items: center;
   width: 100px;
+  /* color: #48484a; */
 }
 
 .fa-wind,
@@ -271,6 +278,7 @@ li {
   padding-top: 25px;
   padding-bottom: 25px;
   border-radius: 12px;
+  
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
 }
 
