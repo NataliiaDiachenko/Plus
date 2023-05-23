@@ -20,7 +20,6 @@ function formatDate(timestamp) {
   ];
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
-  
 }
 
 function formatDay(timestamp) {
@@ -35,8 +34,6 @@ function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
-
-  
   let forecastHTML = `<div class="forecast-row">`;
   // let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
   forecast.forEach(function (forecastDay, index) {
@@ -71,7 +68,7 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  let apiKey = "2ff29bed3181c3526c35cc5408037f85";
+  let apiKey = "8c78e9e7e9928cd1a2a6f923072c3dec";
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast);
 }
@@ -84,11 +81,11 @@ function displayTemperature(response) {
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
   let iconElement = document.querySelector("#icon");
-let feelsElement = document.querySelector("#feels");
+  let feelsElement = document.querySelector("#feels");
 
   celsiusTemperature = response.data.main.temp;
 
-console.log(response.data);
+  console.log(response.data);
 
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
   cityElement.innerHTML = response.data.name;
@@ -97,14 +94,17 @@ console.log(response.data);
   windElement.innerHTML = Math.round(response.data.wind.speed);
   feelsElement.innerHTML = Math.round(response.data.main.feels_like);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
-  iconElement.setAttribute("src",`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   getForecast(response.data.coord);
 }
 
 function search(city) {
-  let apiKey = "2ff29bed3181c3526c35cc5408037f85";
+  let apiKey = "8c78e9e7e9928cd1a2a6f923072c3dec";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
